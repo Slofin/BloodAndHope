@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>鮮血與希望</title>
+<meta charset="utf-8">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script type="text/javascript" src="module.js"></script>
+
+<style>
+    body{
+     background-color: #000000;    
+    }
+    .fonttitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 0px;
+    font-family: "Times New Roman","標楷體";
+    text-align: center;
+    text-shadow: 0px 0px 8px #FF0000;
+    color:white;
+}
+    .font1 {
+    text-align: center;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: "Times New Roman","新細明體";
+    text-shadow: 0px 0px 4px red;
+    color:white;
+}
+    
+    center{
+        text-align: center;
+    }
+    #DIVheader{
+        background-color: #000000;
+    }
+    #DIVsideleft{
+        float: left;
+        height:100%;
+        background-color: #000000;
+        width:20%
+    }
+    #DIVsideright{
+        float: right;       
+        background-color: #000000;
+        width:20%
+    }
+    #DIVmain{
+        float: left;
+        width:50%;
+        height:100%;
+        margin: auto;
+        background-color:#444447;
+        border:10px outset #222224;
+        padding-left: 4%;
+        padding-right: 4%; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #DIVfooter{
+        clear: both;
+        background-color: #000000;
+    }
+    
+    img{
+        text-align: center;
+        border-radius: 10px;
+        width: 32%;
+        height: 300px;
+    }
+    img[src^="pic/1"]{
+        border:1px solid red;
+    }
+    img[src^="pic/2"]{
+        border:1px solid blue;
+    }
+    img[src^="pic/3"]{
+        border:1px solid green;
+    }
+    
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+}
+.menu {
+    font-family: '標楷體';
+    font-size: 20px;
+}
+.menu > li { /*子選擇器，只有第一層*/
+    float: center;
+    width:20%
+}
+.menu li {
+    position: relative;
+    margin: auto;
+    width: 20%;
+    border: 2mm ridge red;
+    min-width: 300px;
+    max-width: 300px;
+}   
+.menu ul {
+    position: absolute;
+    z-index: 10;
+    top: 40%;
+    left: 75%;
+    background-color: #444447;
+    display:none; /*預設ul不顯示*/
+}    
+    
+.menu ul li> ul {/*定義上一層ul li與下一層ul的距離*/
+    z-index: 20;
+    top: 0%;
+    left: 110%;
+}
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #444447;
+    background-size: cover;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    font-family: "Times New Roman","新細明體";
+    text-shadow: 0px 0px 4px red;
+    color:white;
+}
+.menu img{
+    border:unset;
+    border-radius: unset;
+    width: 100%;
+    height: 300px;
+    width: 300px;
+}
+.menu a:hover {
+    background-color: #222224;
+    background-size: cover;
+    color: white;
+}
+.menu li:hover > ul {
+    display: block; /*移動到li，li下一層的ul才顯示*/
+}
+    
+</style>
+</head>
+    
+<body>
+
+<div id='DIVheader'>
+<p class='fonttitle'>鮮血與希望</p>
+<p style="font-size:24px;" class='fonttitle' >Blood And Hope</p>    
+</div>
+    
+<div id="DIVsideleft"><br></div>
+    
+<div id="DIVmain">
+<p class='font1'>鮮血與希望是一款在 2017 年 7 月由墨水小隊工作室製造的一款多人卡牌對戰遊戲。</p>
+<p class='font1'>點擊圖片看更多不一樣的卡片。</p>
+
+<ul class="menu">
+    <li><p class='fonttitle'>信仰</p>
+        <ul>
+            <li><a>妖精 爹斯</a><ul><li><img src="pic/1/1%20(2).png"></li></ul></li>
+            <li><a>無懼騎士康丁爾</a><ul><li><img src="pic/1/1%20(10).png"></li></ul></li>
+            <li><a>聖堂武僧</a><ul><li><img src="pic/1/1%20(11).png"></li></ul></li>
+        </ul>
+    </li>
+</ul>
+    
+<p style="font-size:24px;" class='fonttitle'>Believers</p>
+<img src="pic/1/1%20(2).png">
+<img src="pic/1/1%20(3).png">
+<img src="pic/1/1%20(4).png">
+    
+<ul class="menu">
+    <li style="border: 2mm ridge blue;"><p class='fonttitle'>科技</p>
+        <ul>
+            <li style="border: 2mm ridge blue;"><a>冷血殺人魔 克里夫 席爾斯 托托洛索馬</a><ul><li style="border: 2mm ridge blue;"><img src="pic/2/2%20(2).png"></li></ul></li>
+            <li style="border: 2mm ridge blue;"><a>黑水傭兵 加尼爾</a><ul><li style="border: 2mm ridge blue;"><img src="pic/2/2%20(9).png"></li></ul></li>
+            <li style="border: 2mm ridge blue;"><a>鐵血海盜 洛爾佳尼斯</a><ul><li style="border: 2mm ridge blue;"><img src="pic/2/2%20(15).png"></li></ul></li>
+        </ul>
+    </li>
+</ul>
+    
+<p style="font-size:24px;" class='fonttitle'>Technologist</p>
+<img src="pic/2/2%20(1).png">
+<img src="pic/2/2%20(2).png">
+<img src="pic/2/2%20(3).png">
+    
+<ul class="menu">
+    <li style="border: 2mm ridge green;"><p class='fonttitle'>生存者</p>
+        <ul>
+            <li style="border: 2mm ridge green;"><a>長頸鹿 蘭爾嘉德希爾特多多利西法</a><ul><li style="border: 2mm ridge green;"><img src="pic/3/3%20(12).png"></li></ul></li>
+            <li style="border: 2mm ridge green;"><a>竹輪小子</a><ul><li style="border: 2mm ridge green;"><img src="pic/3/3%20(4).png"></li></ul></li>
+            <li style="border: 2mm ridge green;"><a>笑裡藏刀 舒爾特</a><ul><li style="border: 2mm ridge green;"><img src="pic/3/3%20(15).png"></li></ul></li>
+        </ul>
+    </li>
+</ul>
+    
+<p style="font-size:24px;" class='fonttitle'>Survivor</p>
+<img src="pic/3/3%20(1).png">
+<img src="pic/3/3%20(2).png">
+<img src="pic/3/3%20(3).png">
+</div>
+    
+<div id="DIVsideright"><br></div>
+    
+<div id="DIVfooter"> 
+    <form action="" method="post">
+        <center class='font1'>輸入你的電子信箱以獲取最新資訊：<input type=text name="email"><button type="button" onclick="alert('謝謝你，你的個資現在是我們的了。')">訂閱</button></center><br>
+</form>
+</div>
+        
+</body>
